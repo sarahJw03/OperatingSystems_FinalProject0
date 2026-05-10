@@ -5,11 +5,9 @@ This project implements a simulation of a directed weighted graph using the C pr
 
 The project is divided into three milestones:
 
-- **Milestone 1:** Read graph data from a file and compute the shortest path using Dijkstra’s algorithm.
-- **Milestone 2:** Visualize the directed weighted graph using a graphical user interface (GUI).
-- **Milestone 3:** Simulate movement of an entity along the shortest path with interactive controls.
-
----
+- Milestone 1: Read graph data from a file and compute the shortest path using Dijkstra’s algorithm.
+- Milestone 2: Visualize the directed weighted graph using a graphical user interface (GUI).
+- Milestone 3: Simulate movement of an entity along the shortest path with interactive controls.
 
 ## Features
 
@@ -19,52 +17,39 @@ The project is divided into three milestones:
 - Implements Dijkstra’s shortest path algorithm
 - Displays the shortest path and total cost
 
-**Example Output:**
+Example output:
 ```txt
 0 -> 2 -> 5
 12
 ```
 
----
-
 ### Milestone 2
-Graph visualization using raylib:
-
 - Displays graph nodes as circles
-- Displays directed edges using arrows
+- Displays directed edges with arrows
 - Displays edge weights
-- GUI window for graph visualization
-
----
+- GUI graph visualization
 
 ### Milestone 3
-Simulation features:
-
-- Animated entity movement along the shortest path
-- PLAY / STOP button
+- Animated entity movement
+- PLAY / STOP control button
 - Movement based on edge weights
 - 300ms movement steps
-- 1 second waiting time at intermediate nodes
-- Arrival message when destination is reached
-
----
+- 1 second waiting at intermediate nodes
+- Arrival message at destination
 
 ## Project Files
 ```txt
-dijkstra.c
-sim_stage2.c
-sim_stage3.c
+milestone1.c
+milestone2.c
+milestone3.c
 graph.txt
 Makefile
 README.md
 ```
 
----
-
 ## Compilation and Execution
 
 ### Milestone 1
-
 Compile:
 ```bash
 make milestone1
@@ -75,10 +60,7 @@ Run:
 ./dijkstra graph.txt
 ```
 
----
-
 ### Milestone 2
-
 Compile:
 ```bash
 make milestone2
@@ -89,10 +71,7 @@ Run:
 ./sim graph.txt
 ```
 
----
-
 ### Milestone 3
-
 Compile:
 ```bash
 make milestone3
@@ -103,38 +82,20 @@ Run:
 ./sim graph.txt
 ```
 
----
-
 ## Cleaning Build Files
-
 ```bash
 make clean
 ```
 
----
-
 ## Input File Format
-
-The input file `graph.txt` must follow this format:
-
 ```txt
 N M
-src dst weight
 src dst weight
 ...
 start end
 ```
 
-Where:
-
-- `N` = number of nodes
-- `M` = number of edges
-- `src` = source node
-- `dst` = destination node
-- `weight` = edge weight
-
-**Example:**
-
+Example:
 ```txt
 6 8
 0 1 4
@@ -148,20 +109,12 @@ Where:
 0 5
 ```
 
----
-
 ## Requirements
-
-This project requires:
-
 - GCC compiler
 - raylib graphics library
 - Linux / Ubuntu environment
 
----
-
 ## Team Members
-
 - Sarah Jweiles
 - Sara Zuheka
 - Shahd Muhtaseb
