@@ -5,22 +5,21 @@ This project implements a simulation of a directed weighted graph using the C pr
 
 The project is divided into three milestones:
 
-- Milestone 1: Read graph data from a file and compute the shortest path using Dijkstra’s algorithm.
-- Milestone 2: Visualize the directed weighted graph using a graphical user interface (GUI).
-- Milestone 3: Simulate movement of an entity along the shortest path with interactive controls.
+- **Milestone 1:** Read graph data from a file and compute the shortest path using Dijkstra’s algorithm.
+- **Milestone 2:** Visualize the directed weighted graph using a graphical user interface (GUI).
+- **Milestone 3:** Simulate movement of an entity along the shortest path with interactive controls.
 
 ---
 
 ## Features
 
 ### Milestone 1
-- Reads graph data from graph.txt
+- Reads graph data from an input file
 - Validates input data
 - Implements Dijkstra’s shortest path algorithm
 - Displays the shortest path and total cost
 
-Example output:
-
+**Example Output:**
 ```txt
 0 -> 2 -> 5
 12
@@ -51,13 +50,13 @@ Simulation features:
 ---
 
 ## Project Files
-
 ```txt
-main.c
+dijkstra.c
+sim_stage2.c
+sim_stage3.c
 graph.txt
 Makefile
 README.md
-CMakeLists.txt
 ```
 
 ---
@@ -67,15 +66,13 @@ CMakeLists.txt
 ### Milestone 1
 
 Compile:
-
 ```bash
 make milestone1
 ```
 
 Run:
-
 ```bash
-./dijkstra
+./dijkstra graph.txt
 ```
 
 ---
@@ -83,15 +80,13 @@ Run:
 ### Milestone 2
 
 Compile:
-
 ```bash
 make milestone2
 ```
 
 Run:
-
 ```bash
-./sim
+./sim graph.txt
 ```
 
 ---
@@ -99,15 +94,13 @@ Run:
 ### Milestone 3
 
 Compile:
-
 ```bash
 make milestone3
 ```
 
 Run:
-
 ```bash
-./sim
+./sim graph.txt
 ```
 
 ---
@@ -122,7 +115,7 @@ make clean
 
 ## Input File Format
 
-The input file graph.txt must follow this format:
+The input file `graph.txt` must follow this format:
 
 ```txt
 N M
@@ -134,13 +127,13 @@ start end
 
 Where:
 
-- N = number of nodes
-- M = number of edges
-- src = source node
-- dst = destination node
-- weight = edge weight
+- `N` = number of nodes
+- `M` = number of edges
+- `src` = source node
+- `dst` = destination node
+- `weight` = edge weight
 
-Example:
+**Example:**
 
 ```txt
 6 8
@@ -167,7 +160,7 @@ This project requires:
 
 ---
 
-## Author
+## Team Members
 
 - Sarah Jweiles
 - Sara Zuheka
